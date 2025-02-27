@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Dominic - Responsive HTML5 OnePage Template</title>  
+    <title>Ankit's Portfolio</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-iocn.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -140,11 +140,35 @@
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
+                <style>
+					.right-box-pro {
+						background: none; /* Add black background */
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 5px 15px 15px 0; /* Adds extra space on the right & bottom */
+						border-radius: 5px; /* Optional rounded corners */
+						max-width: fit-content; /* Keep the box size limited */
+					}
+				
+					.right-box-pro img {
+						width: 100%; /* Make the image smaller */
+						height: auto; /* Maintain aspect ratio */
+						border-radius: 10px; /* Optional rounded corners */
+					}
+				
+					.col-md-6 {
+						display: flex;
+						justify-content: center; /* Center the box inside the column */
+					}
+				</style>
+				
+				<div class="col-md-6">
+					<div class="right-box-pro wow fadeIn">
+						<img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+					</div><!-- end media -->
+				</div><!-- end col -->
+				
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
@@ -518,10 +542,6 @@
         <span>Email</span>
     </div>
 </div>
-
-
-
-
 
     <div class="copyrights">
         <div class="container">
