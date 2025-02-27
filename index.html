@@ -462,17 +462,31 @@
 <style>
     /* Centering and Styling the Social Media Icons */
     .social-links {
-        text-align: center;
+        display: flex;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Aligns items vertically */
+        gap: 20px; /* Space between each icon */
         margin-top: 10px;
     }
 
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .social-links a {
-        display: inline-block;
-        margin: 10px;
-        font-size: 40px; /* Increased icon size */
+        font-size: 40px; /* Icon size */
         color: #333; /* Default icon color */
         text-decoration: none;
         transition: color 0.3s ease-in-out;
+    }
+
+    /* Label Styling */
+    .social-links span {
+        font-size: 14px; /* Small text size */
+        color: #666; /* Text color */
+        margin-top: 5px;
     }
 
     /* Hover Effect */
@@ -481,16 +495,31 @@
     }
 </style>
 
-<!-- Social Media Icons -->
+<!-- Social Media Icons with Labels in a Single Line -->
 <div class="social-links">
-    <a href="https://github.com/ankitpanigrahi78/portfolio.git" class="github" target="_blank">
-        <i class="bi bi-github"></i>
-    </a>
+    <div class="icon-container">
+        <a href="https://github.com/ankitpanigrahi78/portfolio.git" class="github" target="_blank">
+            <i class="bi bi-github"></i>
+        </a>
+        <span>GitHub</span>
+    </div>
 
-    <a href="https://www.linkedin.com/in/ankit-panigrahi-4b520a209/" class="linkedin" target="_blank">
-        <i class="bi bi-linkedin"></i>
-    </a>
+    <div class="icon-container">
+        <a href="https://www.linkedin.com/in/ankit-panigrahi-4b520a209/" class="linkedin" target="_blank">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <span>LinkedIn</span>
+    </div>
+
+    <div class="icon-container">
+        <a href="mailto:your-email@example.com" class="email">
+            <i class="bi bi-envelope-fill"></i>
+        </a>
+        <span>Email</span>
+    </div>
 </div>
+
+
 
 
 
