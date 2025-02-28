@@ -36,13 +36,79 @@
 </head>
 <body id="page-top" class="politics_version">
 
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-			<div id="loader"></div>  
-		</div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
+ <!-- Preloader CSS -->
+ <style>
+	/* Full-screen Preloader */
+	#preloader {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #111;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+
+	/* Loader Wrapper */
+	#loader-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Spinning Loader Animation */
+	.loader {
+		width: 60px;
+		height: 60px;
+		border: 6px solid rgba(255, 255, 255, 0.2);
+		border-top-color: #00c3ff;
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+	}
+
+	/* Keyframes for spinning effect */
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+	/* Fade-out effect */
+	.fade-out {
+		opacity: 0;
+		transition: opacity 0.5s ease-out;
+		pointer-events: none;
+	}
+
+	/* Page Content */
+	.content {
+		display: none;
+		text-align: center;
+		padding: 50px;
+	}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="preloader">
+	<div id="loader-wrapper">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- END LOADER -->
+
+
+<!-- JavaScript for Preloader -->
+<script>
+	window.addEventListener("load", function () {
+		document.getElementById("preloader").classList.add("fade-out");
+		setTimeout(() => {
+			document.getElementById("preloader").style.display = "none";
+			document.querySelector(".content").style.display = "block";
+		}, 500); // Delay before content appears
+	});
+</script>
 	
 	
 
@@ -139,7 +205,7 @@
                             solutions. Committed to advancing aerospace technologies.</p>
                         </div> 
                             <a href="uploads/Ankit%20CV%20(V5).pdf" class="sim-btn btn-hover-new" data-text="Click Me">
-                                <span>Download CV</span>
+                                <span><b>Download CV</b></span>
                               </a>
                     </div><!-- end messagebox -->
                 
@@ -174,7 +240,7 @@
             
                 <div class="message-box" style="text-align: justify;">
                     <div style="text-align: justify;">
-                    <p>These are my technical skills and expertise levels. I have hands-on experience in multiple programming languages and frameworks, with proficiency in front-end and back-end development.</p></div>
+                    <p>These are my technical skills and expertise levels. I have hands-on experience in multiple CAD Software, Sumulation and Documentation, with proficiency in design and development.</p></div>
                 </div>
             
         </div>
