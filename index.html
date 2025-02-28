@@ -189,48 +189,91 @@
             M95 100 Q 100 15 105 100 Z">
         </path>
     </svg>
-    <div id="about" class="section lb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>About</h3>
-                
-                    <div class="message-box">
-                        <div style="text-align: justify;">                       
-                        
-                        <p> As more than 2+ years experienced aerospace professional specializing in Mechanical CAD design, 
-                            simulation, and analysis, I excel in creating precise CAD models and conducting detailed simulations to 
-                            ensure the optimal performance of aerospace components. My expertise includes comprehensive report
-                            making, where I support the engineering decisions and project development. </p>
-						<p>With a strong background in mechanical design and a keen eye for detail, I translate complex engineering requirements into actionable 
-                            solutions. Committed to advancing aerospace technologies.</p>
-                        </div> 
-                            <a href="uploads/Ankit%20CV%20(V5).pdf" class="sim-btn btn-hover-new" data-text="Click Me">
-                                <span><b>Download CV</b></span>
-                              </a>
-                    </div><!-- end messagebox -->
-                
+    <style>
+    /* Style for the About Section */
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-                <style>
-					.right-box-pro {
-						background: none; /* Add black background */
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						padding: 0px 10px 10px 0; /* Adds extra space on the right & bottom */
-						border-radius: 5px; /* Optional rounded corners */
-						max-width: fit-content; /* Keep the box size limited */
-					}
-				</style>
-				
-				<div class="col-md-6">
-					<div class="right-box-pro wow fadeIn">
-						<img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
-					</div><!-- end media -->
-				</div><!-- end col -->
-				
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+    /* Style for the text */
+    .message-box {
+        flex: 1;
+        text-align: justify;
+    }
+
+    .message-box p {
+        color: rgba(0, 0, 0, 0.7); /* Slightly faded black */
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Style for the image */
+    .right-box-pro {
+        max-width: 40%;
+    }
+
+    .right-box-pro img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); /* Light shadow */
+    }
+
+    /* Style for the Download CV Button */
+    .cv-button {
+        display: inline-block;
+        background: linear-gradient(45deg, black, grey);
+        color: white;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .cv-button:hover {
+        background: linear-gradient(45deg, grey, black);
+        color: #ddd;
+        transform: scale(1.05);
+    }
+</style>
+
+<div id="about" class="section lb">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>About</h3>
+
+            <div class="about-container">
+                <!-- Text Content -->
+                <div class="message-box">
+                    <p>As more than 2+ years experienced aerospace professional specializing in Mechanical CAD design, 
+                        simulation, and analysis, I excel in creating precise CAD models and conducting detailed simulations to 
+                        ensure the optimal performance of aerospace components. My expertise includes comprehensive report
+                        making, where I support the engineering decisions and project development.</p>
+                    
+                    <p>With a strong background in mechanical design and a keen eye for detail, I translate complex engineering requirements into actionable 
+                        solutions. Committed to advancing aerospace technologies.</p>
+                    
+                    <!-- Download CV Button -->
+                    <a href="uploads/Ankit%20CV%20(V5).pdf" class="cv-button">Download CV</a>
+                </div>
+
+                <!-- Image on Right -->
+                <div class="right-box-pro">
+                    <img src="uploads/about_04.jpg" alt="Profile Image" class="img-fluid img-rounded">
+                </div>
+            </div>
+
+        </div><!-- end section-title -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
 	
 	<!-- Skills Section -->
 	<div id="skills" class="section lb">
@@ -376,7 +419,7 @@
             <div class="section-title text-left">
                 <h3>Services</h3>
                 <div style="text-align: justify;">
-                <p>I offer a comprehensive suite of design services leveraging cutting-edge CAD technology to create precise digital models to optimize performance and efficiency.
+                <p style="color: black;">I offer a comprehensive suite of design services leveraging cutting-edge CAD technology to create precise digital models to optimize performance and efficiency.
                     </p>
                     </div>
             </div><!-- end title -->
@@ -389,7 +432,7 @@
 						</div>
 						<h2>3-D Design:</h2>
                         <div style="text-align: justify;">
-						<p>I provide a range of CAD design services that focus on 3D modeling, rendering, and assembly design to transform innovative concepts into detailed, manufacturable models. This service offers advanced visualization and precision, ensuring every component is accurately represented before moving to production.</p>
+						<p style="color: black;">I provide a range of CAD design services that focus on 3D modeling, rendering, and assembly design to transform innovative concepts into detailed, manufacturable models. This service offers advanced visualization and precision, ensuring every component is accurately represented before moving to production.</p>
                         </div>
 					</div>
                 </div><!-- end col -->
@@ -400,7 +443,7 @@
 						</div>
 						<h2>Stress Calculations & Manufacturing:</h2>
                         <div style="text-align: justify;">
-						<p>I offer comprehensive simulation and analysis, including stress calculations and thermal analyses, to validate and optimize designs. These services ensure that every model is robust, reliable, and ready for efficient manufacturing while meeting strict performance criteria.</p>
+						<p style="color: black;">I offer comprehensive simulation and analysis, including stress calculations and thermal analyses, to validate and optimize designs. These services ensure that every model is robust, reliable, and ready for efficient manufacturing while meeting strict performance criteria.</p>
                         </div>
 					</div>
                 </div><!-- end col -->
@@ -411,7 +454,7 @@
 						</div>
 						<h2>Proper Documentation:</h2>
                         <div style="text-align: justify;">
-						<p>I produce precise technical drawings and comprehensive documentation to support quality control and streamlined production. This clear, actionable blueprint is essential for ensuring consistency and accuracy across diverse industries, from aerospace and automotive to robotics and advanced engineering.</p>
+						<p style="color: black;">I produce precise technical drawings and comprehensive documentation to support quality control and streamlined production. This clear, actionable blueprint is essential for ensuring consistency and accuracy across diverse industries, from aerospace and automotive to robotics and advanced engineering.</p>
                        </div>
 					</div>
                 </div><!-- end col -->
@@ -422,7 +465,7 @@
 						</div>
 						<h2>Ongoing Support & Consultation</h2>
                         <div style="text-align: justify;">
-						<p>I provide dedicated post-design support to ensure your projects run smoothly from concept to production. This includes troubleshooting, design modifications, and expert advice to integrate CAD models seamlessly into your manufacturing process. My support services guarantee that every phase of the design lifecycle is backed by continuous technical assistance and strategic consultation, ensuring optimal performance and long-term success.</p>
+						<p style="color: black;">I provide dedicated post-design support to ensure your projects run smoothly from concept to production. This includes troubleshooting, design modifications, and expert advice to integrate CAD models seamlessly into your manufacturing process. My support services guarantee that every phase of the design lifecycle is backed by continuous technical assistance and strategic consultation, ensuring optimal performance and long-term success.</p>
                         </div>
 					</div>
                 </div><!-- end col -->
@@ -433,7 +476,7 @@
 						</div>
 						<h2>Matlab Simulation & Plotting Graphs:</h2>
                         <div style="text-align: justify;">
-						<p>I leverage MATLAB powerful simulation capabilities to model dynamic systems and validate design performance under various conditions. By running comprehensive simulations, I optimize parameters and predict real-world behavior accurately. I also generate detailed graphs and visualizations to illustrate data trends and system responses, supporting data-driven decisions throughout the design process. This approach ensures that every aspect of the design is thoroughly tested and refined for optimal efficiency and reliability.</p>
+						<p style="color: black;">I leverage MATLAB powerful simulation capabilities to model dynamic systems and validate design performance under various conditions. By running comprehensive simulations, I optimize parameters and predict real-world behavior accurately. I also generate detailed graphs and visualizations to illustrate data trends and system responses, supporting data-driven decisions throughout the design process. This approach ensures that every aspect of the design is thoroughly tested and refined for optimal efficiency and reliability.</p>
                         </div>
 					</div>
                 </div><!-- end col -->
@@ -444,7 +487,7 @@
 						</div>
 						<h2>Training:</h2>
                         <div style="text-align: justify;">
-						<p>I offer customized training sessions that empower professionals to master advanced CAD tools, simulation techniques, and MATLAB analysis. My hands-on workshops cover best practices, troubleshooting strategies, and real-world applications, enabling teams to boost efficiency and drive innovation. Whether you're looking to upskill your staff or streamline design processes, my training programs deliver actionable insights and measurable improvements.</p></div>
+						<p style="color: black;">I offer customized training sessions that empower professionals to master advanced CAD tools, simulation techniques, and MATLAB analysis. My hands-on workshops cover best practices, troubleshooting strategies, and real-world applications, enabling teams to boost efficiency and drive innovation. Whether you're looking to upskill your staff or streamline design processes, my training programs deliver actionable insights and measurable improvements.</p></div>
 					</div>
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -456,7 +499,7 @@
 			<div class="section-title text-left">
                 <h3>Portfolio</h3>
                 <div style="text-align: justify;">
-                <p>My work spans aerospace, automotive, and robotics sectors, and I continuously seek innovative solutions to drive project success.</p></div>
+                <p style="color: black;">My work spans aerospace, automotive, and robotics sectors, and I continuously seek innovative solutions to drive project success.</p></div>
             </div><!-- end title -->
 			
 			
