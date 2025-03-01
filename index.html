@@ -115,8 +115,10 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-		</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="background: linear-gradient(to right, #007bff, #0056b3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">
+            Ankit's Portfolio
+        </a>
+        
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -133,7 +135,7 @@
 				<a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
 			  </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -189,6 +191,14 @@
             M95 100 Q 100 15 105 100 Z">
         </path>
     </svg>
+    
+    <style>
+        #clouds {
+            position: relative;
+            transform: translateY(2cm); /* Moves the SVG exactly 1cm down */
+        }
+    </style>
+    
     <style>
     /* Style for the About Section */
     .about-container {
@@ -257,7 +267,55 @@
                         making, where I support the engineering decisions and project development.</p>
                     <p>With a strong background in mechanical design and a keen eye for detail, I translate complex engineering requirements into actionable 
                         solutions. Committed to advancing aerospace technologies.</p>
-            
+                        <div class="about-box">
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Name:</span> <span>Ankit Panigrahi</span></li>
+                                <li class="d-flex"><span>Date of birth:</span> <span>June 25, 2002</span></li>
+                                <li class="d-flex"><span>Address:</span> <span>Whitefield Main Road, Mahadevapura, Bengaluru, Karnataka, India-560048</span></li>
+                                <li class="d-flex"><span>Email:</span> <span>ankitpanigrahi78@gmail.com</span></li>
+                                <li class="d-flex"><span>Phone: </span> <span>+91 7735-791-012</span></li>
+                            </ul>
+                        </div>
+                        
+                        <style>
+                        .about-box {
+                            background: #f0f0f0; /* Light grey background */
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                            max-width: 500px;
+                            margin: auto;
+                            text-align: left;
+                        }
+                        
+                        .about-info {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        .about-info li {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px 0;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        
+                        .about-info li:last-child {
+                            border-bottom: none;
+                        }
+                        
+                        .about-info span:first-child {
+                            font-weight: bold;
+                            color: #0056b3; /* Blue text for labels */
+                        }
+                        
+                        .about-info span:last-child {
+                            color: #333; /* Dark text for values */
+                        }
+                        </style>
+                        
+                        
                     <!-- Download CV Button Centered at the End -->
                     <div class="cv-button-container">
                         <a href="uploads/Ankit%20CV%20(V5).pdf" class="cv-button">Download CV</a>
@@ -444,7 +502,7 @@
     <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-left">
-                <h3>Services</h3>
+                <h3>Works</h3>
                 <div style="text-align: justify;">
                 <p style="color: black;">I offer a comprehensive suite of design services leveraging cutting-edge CAD technology to create precise digital models to optimize performance and efficiency.
                     </p>
@@ -521,6 +579,79 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Background Styling */
+        .ftco-hireme {
+            background: url('uploads/bg_1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 150px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Dark Overlay Effect */
+        .ftco-hireme::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        /* Text and Button Styles */
+        .ftco-hireme .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .ftco-hireme h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .ftco-hireme span {
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #0056b3, #007bff);
+            transform: scale(1.05);
+        }
+    </style>
+
+    <section class="ftco-section ftco-hireme img margin-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h2>I'm <span>Available</span> for Freelancing</h2>
+                    <p>"Passionate about science, technology, and space, I strive to push the boundaries of innovation and explore the infinite possibilities that lie beyond." 🚀✨🔭</p>
+                    <p class="mb-0"><a href="mailto:your-email@example.com" class="btn btn-primary py-3 px-5">Hire Me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 	<div id="portfolio" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
@@ -691,7 +822,6 @@
 	</div>
 
 	
-	
 	<div id="contact" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
@@ -741,7 +871,12 @@
 								<div class="clearfix"></div>
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button id="sendMessageButton" class="cv-button" data-text="Send Message" type="submit">Send Message</button>
+									<a href="mailto:ankit@gmail.com?subject=Contact%20Form%20Inquiry&body=Hello,%0D%0A%0D%0AMy%20Name:%20%0D%0AEmail:%20%0D%0APhone:%20%0D%0AMessage:%20" 
+   class="cv-button">
+   Send Message
+</a>
+
+
 
 <style>
 .cv-button {
@@ -795,7 +930,7 @@
 
     .social-links a {
         font-size: 40px; /* Icon size */
-        color: #333; /* Default icon color */
+        color: #000000; /* Default icon color */
         text-decoration: none;
         transition: color 0.3s ease-in-out;
     }
@@ -803,7 +938,7 @@
     /* Label Styling */
     .social-links span {
         font-size: 14px; /* Small text size */
-        color: #666; /* Text color */
+        color: #000000; /* Text color */
         margin-top: 5px;
     }
 
@@ -859,7 +994,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#services">Services</a>
+                    <a href="#services">Works</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
                 </p>
