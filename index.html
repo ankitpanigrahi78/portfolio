@@ -714,8 +714,31 @@
 								<div class="clearfix"></div>
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+									<button id="sendMessageButton" class="cv-button" data-text="Send Message" type="submit">Send Message</button>
+
+<style>
+.cv-button {
+    background: linear-gradient(to right, #333, #666); /* Black to Grey Gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cv-button:hover {
+    background: linear-gradient(to right, #444, #888);
+    transform: scale(1.05);
+}
+</style>
+
 								</div>
+                                
 							</div>
 						</form>
                     </div>
@@ -797,7 +820,7 @@
     <div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
-                <div class="footer-left">
+                <div class="footer-center">
                     <p class="footer-links">
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
