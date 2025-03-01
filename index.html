@@ -248,7 +248,6 @@
     <div class="container">
         <div class="section-title text-left">
             <h3>About</h3>
-
             <div class="about-container">
                 <!-- Text Content -->
                 <div class="message-box">
@@ -256,19 +255,47 @@
                         simulation, and analysis, I excel in creating precise CAD models and conducting detailed simulations to 
                         ensure the optimal performance of aerospace components. My expertise includes comprehensive report
                         making, where I support the engineering decisions and project development.</p>
-                    
                     <p>With a strong background in mechanical design and a keen eye for detail, I translate complex engineering requirements into actionable 
                         solutions. Committed to advancing aerospace technologies.</p>
-                    
-                    <!-- Download CV Button -->
-                    <a href="uploads/Ankit%20CV%20(V5).pdf" class="cv-button">Download CV</a>
+            
+                    <!-- Download CV Button Centered at the End -->
+                    <div class="cv-button-container">
+                        <a href="uploads/Ankit%20CV%20(V5).pdf" class="cv-button">Download CV</a>
+                    </div>
                 </div>
-
+            
                 <!-- Image on Right -->
                 <div class="right-box-pro">
                     <img src="uploads/about_04.jpg" alt="Profile Image" class="img-fluid img-rounded">
                 </div>
             </div>
+            
+            <style>
+            .cv-button-container {
+                text-align: center; /* Centers the button */
+                margin-top: 20px; /* Adds space between the last paragraph and the button */
+            }
+            
+            .cv-button {
+                background: linear-gradient(to right, #333, #666); /* Black to Grey Gradient */
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                text-decoration: none;
+                display: inline-block;
+            }
+            
+            .cv-button:hover {
+                background: linear-gradient(to right, #444, #888);
+                transform: scale(1.05);
+            }
+            </style>
+            
 
         </div><!-- end section-title -->
     </div><!-- end container -->
