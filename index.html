@@ -751,19 +751,62 @@ $(document).ready(function(){
             </div><!-- end title -->
 			
 			
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">3-D Design</button>
-						<button data-filter=".gal_b">Manufacturing Design</button>
-						<button data-filter=".gal_c">Simulation</button>
-					</div>
-				</div>
-			</div>
+            <style>
+                .gallery-menu {
+                    
+                    background-color: black;
+                    padding: 20px 0; /* Add padding for spacing */
+                    text-align: center;
+                }
+            
+                .filter-button-group button {
+                    background: none;
+                    border: 1px solid #007bff;
+                    color: #007bff;
+                    padding: 10px 15px;
+                    margin: 5px; /* Adds space between buttons */
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    border-radius: 5px;
+                }
+            
+                .filter-button-group button:hover, 
+                .filter-button-group button.active {
+                    background: #007bff;
+                    color: white;
+                }
+            
+                @media (max-width: 768px) {
+                    .filter-button-group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center; /* Center buttons */
+                    }
+            
+                    .filter-button-group button {
+                        flex: 1 1 45%; /* Each button takes up to 45% of the width */
+                        margin: 5px; /* Space between buttons */
+                    }
+                }
+            </style>
+            
+            <div class="gallery-menu row">
+                <div class="col-md-12">
+                    <div class="button-group filter-button-group text-left">
+                        <button class="active" data-filter="*">All</button>
+                        <button data-filter=".gal_a">3-D Design</button>
+                        <button data-filter=".gal_b">Manufacturing Design</button>
+                        <button data-filter=".gal_c">Simulation</button>
+                        <button data-filter=".gal_d">Electrical</button>
+                        <button data-filter=".gal_e">Robotics</button>
+                    </div>
+                </div>
+            </div>
+            
 			
 			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid  gal_b gal_e">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -772,7 +815,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c gal_b">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -799,7 +842,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_c">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -808,7 +851,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_c">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-07.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -826,7 +869,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_c">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-09.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -871,7 +914,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_c">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-14.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -880,7 +923,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_c">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-15.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -889,7 +932,7 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c gal_e">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-16.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -897,8 +940,62 @@ $(document).ready(function(){
 						</div>
 					</div>
 				</div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_e">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-17.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-17.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_e">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-18.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-18.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_d">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-19.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-19.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_d">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-20.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-20.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b gal_d">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-21.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-21.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-22.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-22.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b gal_a">
 					<div class="gallery-single fix">
 						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
