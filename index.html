@@ -36,6 +36,20 @@
 </head>
 <body id="page-top" class="politics_version">
 
+    <script>
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault(); // Disable Right-Click
+        });
+        
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && ["I", "J", "U"].includes(e.key))) {
+                e.preventDefault(); // Block F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+U
+            }
+        });
+        </script>
+        
+
+
  <!-- Preloader CSS -->
  <style>
 	/* Full-screen Preloader */
@@ -154,7 +168,7 @@
 	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
 		<div class="heading">
 			<h1 style="text-transform: none;">Hello, I'm Ankit Panigrahi😊</h1>
-			<p><h6>"Aerospace professional with 2+ years in CAD Design Software, Simulation, and Analysis, <br>expert in optimizing aerospace components and delivering actionable engineering insights."</h6></p>
+			<p><h6>"Experienced Mechanical Engineering with 2+ years in Light combat aircraft fuel system design and product development. Passionate about advancing aerospace innovations through expertise in aircraft fuel system. "</h6></p>
 			<h3 class="cd-headline clip is-full-width">
 				<span>I am specialized in </span>
 				<span class="cd-words-wrapper">
@@ -237,12 +251,7 @@
             <div class="about-container">
                 <!-- Text Content -->
                 <div class="message-box">
-                    <p>As more than 2+ years experienced aerospace professional specializing in Mechanical CAD design, 
-                        simulation, and analysis, I excel in creating precise CAD models and conducting detailed simulations to 
-                        ensure the optimal performance of aerospace components. My expertise includes comprehensive report
-                        making, where I support the engineering decisions and project development.</p>
-                    <p>With a strong background in mechanical design and a keen eye for detail, I translate complex engineering requirements into actionable 
-                        solutions. Committed to advancing aerospace technologies.</p>
+                    <p>Experienced Mechanical Engineer with 2+ years in <b>Light Combat Aircraft fuel system design</b> and <b>aerospace product development</b>. Proficient in <b>CAD modeling, simulation, and theoretical analysis</b>, ensuring optimal performance of aerospace components. Skilled in <b>engineering design, report generation, and product development</b>, translating complex requirements into innovative solutions. Committed to <b>advancing aerospace technology</b> through precision and expertise.</p>
                         <div class="about-box">
                             <ul class="about-info mt-4 px-md-0 px-2">
                                 <li class="d-flex"><span>Name:</span> <span>Ankit Panigrahi</span></li>
@@ -560,80 +569,108 @@
 	
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <style>
-        /* Background Styling */
-        .ftco-hireme {
-            background: url('uploads/bg_1.jpg') no-repeat center center fixed;
-            background-size: cover;
-            padding: 150px 0;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
 
-        /* Dark Overlay Effect */
-        .ftco-hireme::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: 1;
-        }
+<style>
+    /* Video Background for ftco-hireme Section */
+    .ftco-hireme {
+        position: relative;
+        padding: 150px 0;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
 
-        /* Text and Button Styles */
-        .ftco-hireme .container {
-            position: relative;
-            z-index: 2;
-        }
+    /* Video Container (Ensures video stays in place) */
+    .ftco-hireme .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
 
-        .ftco-hireme h2 {
-            font-size: 36px;
-            font-weight: bold;
-        }
+    /* Ensure Video Covers Entire Section */
+    .ftco-hireme .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures video covers the full area */
+    }
 
-        .ftco-hireme span {
-            color: #007bff;
-        }
+    /* Dark Overlay for Better Readability */
+    .ftco-hireme::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        z-index: 0;
+    }
 
-        .btn-primary {
-            background: linear-gradient(to right, #007bff, #0056b3);
-            border: none;
-            padding: 12px 25px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: 0.3s ease-in-out;
-        }
+    /* Text & Button Styles */
+    .ftco-hireme .container {
+        position: relative;
+        z-index: 2; /* Keeps content above the video */
+    }
 
-        .btn-primary:hover {
-            background: linear-gradient(to right, #0056b3, #007bff);
-            transform: scale(1.05);
-        }
-    </style>
+    .ftco-hireme h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
 
+    .ftco-hireme span {
+        color: #007bff;
+    }
+
+    .btn-primary {
+        background: linear-gradient(to right, #007bff, #0056b3);
+        border: none;
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(to right, #0056b3, #007bff);
+        transform: scale(1.05);
+    }
+</style>
+
+<!-- Hire Section (Text Above Video) -->
 <div id="hireme" class="section lb">
     <div class="container">
         <div class="section-title text-left">
             <h3>Hire</h3>
             <div style="text-align: justify;">
-                <p style="color: black;">"If you're looking for someone to bring your ideas to life with precision and creativity—hire me, and let's build the future together!" ✨🚀🔭
-                    </p>
-                    </div>
-            </div></div>
-    <section class="ftco-section ftco-hireme img margin-top">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 text-center">
-                    <h2>I'm <span> Available </span> for Freelancing</h2>
-                    <p>"Passionate about science, technology, and space, I strive to push the boundaries of innovation and explore the infinite possibilities that lie beyond."</p>
-                    <p class="mb-0"><a href="mailto:your-ankitpanigrahi78@gmail.com" class="btn btn-primary py-3 px-5">Hire Me</a></p>
-                </div>
+                <p style="color: black;">
+                    "If you're looking for someone to bring your ideas to life with precision and creativity—hire me, and let's build the future together!" ✨🚀🔭
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+<!-- Video Section (Background Video) -->
+<section class="ftco-section ftco-hireme">
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="uploads/Flight.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <h2>I'm <span> Available </span> for Freelancing</h2>
+        <p>"Passionate about science, technology, and space, I strive to push the boundaries of innovation and explore the infinite possibilities that lie beyond."</p>
+        <p class="mb-0"><a href="mailto:ankitpanigrahi78@gmail.com" class="btn btn-primary py-3 px-5">Hire Me</a></p>
+    </div>
+</section>
+
 
 
 <!-- Counter Section -->
